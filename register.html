@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <div class="register-form">
+        <form method="post" class="register" action="register.php">
+
+            <input type="text" name="name" id="name" placeholder="Name"/>
+            <input type="email" name="email" placeholder="Email"/>
+            <input type="tel" name="phone" placeholder="Phone" />
+            <input type="date" name="dob" placeholder="Date Of Birth" />
+            <input type="text" name="college" placeholder="College" />
+            <input type="text" name="degree" placeholder="Degree" />
+            <input type="text" name="department" placeholder="Department"/>
+            <input type="text" name="city" placeholder="City"/>
+            <input type="text" name="year" placeholder="Year" />
+            <input type="year" name="Graduation Year" placeholder="Graduation Year">
+            <a href="verify.html" target="_self" >Submit</a>
+        </form>
+    </div>
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .register{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: beige;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        padding: 30px;
+    }
+    .head{
+        color: green;
+    }
+    .register input{
+        background-color: beige;
+        outline: none;
+        width: 100%;
+        border: none;
+		border-bottom: 2px solid red;
+       
+    }
+    button{
+        height: 50px;
+        width: 90px;
+        background-color: violet;
+        border-radius: 30px;
+    }
+
+</style>
+</body>
+</html>
+
