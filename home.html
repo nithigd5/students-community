@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div class="layout">
+    <div class="nav-menu">
+        <div class="menu-item">
+            <a href="#" class="menu-item-l">Home</a> 
+        </div>
+        <div class="menu-item">
+            <a href="#" class="menu-item-l">Contact</a> 
+        </div>
+        <div class="menu-item">
+            <a href="#" class="menu-item-l">About</a> 
+        </div>
+    </div>
+    <div class="contentpage">helo</div>
+    </div>
+<style>
+    body, *{
+        box-sizing: border-box;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .layout{
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        margin: 2px;
+    }
+    .contentpage{
+        display: flex;
+        width: 80vw;
+        height: 100vh;
+        background-color: green;
+        
+    }
+    .nav-menu{
+        display: flex;
+        width: 20%;
+        height: 100vh;
+        justify-content: top;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f5f6f7;
+    }
+    .menu-item{
+        width: 100%;
+        text-align: center;
+        background: purple;
+        margin: 2px;
+        /* border-radius: 10px; */
+        padding-top: 10px;
+        padding-bottom: 10px;
+  } 
+    .menu-item-l{
+        text-decoration: none;
+        color:bisque;
+        font-size: large;
+        font-weight: 700;
+    }
+</style>    
+</body>
+</html>
