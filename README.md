@@ -7,4 +7,4 @@ CSS
 
 Server: Apache Server.
 
-Team Members: @nithigd5 , @pilotkesav (Kesavabharathi P) , @Vasanthkumar12 (Vasanthkumar P), @AravindSharma23 (AravindKumar S)
+Team Members: @nithigd5 , @pilotkesav (Kesavabharathi P) , @Vasanthkumar12 (Vasanthkumar M), @AravindSharma23 (AravindKumar S)
