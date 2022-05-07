@@ -11,6 +11,7 @@
  </head>
 <body>
     <div class="login-form-wrapper">
+        <h1 class="topic">Register</h1>
         <form method="post" class="register" action="register.php" onsubmit="return validateForm()">
             <div class='form-input'>
                 <input type="text" class="login-input" name="name" id="name" placeholder="Name"/>
@@ -20,14 +21,30 @@
                 <input class="login-input" type="tel" name="phone" id="phone" placeholder="Phone" />
                 <span class="error"></span> 
             </div>
-            <input class="login-input" type="email" name="email" id="email" placeholder="Email"/>
-            <input class="login-input" type="date" name="dob" id="dob" placeholder="Date Of Birth" />
-            <input class="login-input" type="text" name="college" id="college" placeholder="College" />
-            <input class="login-input" type="text" name="degree" id="degree" placeholder="Degree" />
-            <input class="login-input" type="text" name="department" id="department" placeholder="Department"/>
-            <input class="login-input" type="text" name="city" id="city" placeholder="City"/>
-            <input class="login-input" type="text" name="year" id="year" placeholder="Year" />
-            <input class="login-input" type="year" name="graduation-year" id="graduation-year"  placeholder="Graduation Year">
+            <div class="form-input">
+                <input class="login-input" type="email" name="email" id="email" placeholder="Email"/>
+            </div>
+            <div class="form-input">
+                <input class="login-input" type="date" name="dob" id="dob" placeholder="Date Of Birth" />
+            </div> 
+            <div class="form-input">
+                <input class="login-input" type="text" name="college" id="college" placeholder="College" />
+            </div>
+            <div class="form-input">
+                <input class="login-input" type="text" name="degree" id="degree" placeholder="Degree" />
+            </div>
+            <div class="form-input">
+                <input class="login-input" type="text" name="department" id="department" placeholder="Department"/>
+            </div>
+            <div class="form-input">
+                <input class="login-input" type="text" name="city" id="city" placeholder="City"/>
+            </div>
+            <div class="form-input">
+                <input class="login-input" type="text" name="year" id="year" placeholder="Year" />
+            </div>
+            <div class="form-input">
+                <input class="login-input" type="year" name="graduation-year" id="graduation-year"  placeholder="Graduation Year">
+            </div>
             
             <button class="login-btn" value="submit" type="submit">Submit</a>
         
