@@ -1,3 +1,5 @@
+@import url("/assets/css/theme.css");
+
 *, body {
     margin: 0;
     box-sizing: border-box;
@@ -6,25 +8,83 @@
 .register{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: beige;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 30px;
     padding: 30px;
 }
+
 .head{
-    color: green;
+    color: var(--accent);
 }
-.register input{
-    background-color: beige;
+/* .register-input{    
+    background-color: var(--accent);
     outline: none;
     width: 100%;
     border: none;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid var(--primary);
    
-}
+} */
 
 .error {
-    color:red;
+    color: var(--error);
+}
+.login-form-wrapper{
+    margin: auto;
+    background-color: var(--accent);
+    padding: 40px;
+    width: fit-content;
+    border-radius: 30px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-input{
+    align-self: center;
+    background-color: var(--accent);
+    padding: 12px 20px;
+    margin:8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid var(--secondary);
+}
+.login-input::placeholder{
+    color: var(--text);
+}
+.login-input:hover{
+    border-bottom: 2px solid green;
+}
+.login-input:active{
+    border: none;
+}
+.login-input:focus{
+    outline: none;
+    border-bottom: 2px solid green;
+}
+.login-btn{
+    width: 90px;
+    padding: 10px;
+    color: aliceblue;
+    background-color:var(--secondary);
+    border-radius: 25px;
+    border:none;
+    grid-column : 1/span 2;
+    margin: auto;
+}
+.form-input{
+    display: flex;
+    flex-direction: column  ;
+}
+.login-input.error-input{
+    border-bottom: var(--error) 2px solid;
+}
+.topic{
+    text-align: center;
+    text-decoration: solid;
+    color: var(--secondary);
+    font-display: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
