@@ -28,7 +28,7 @@ function validateName(){
 
 function validatePhone(){
     let phone=document.getElementById("phone");
-    let regexPhone = /[6-9][0-9]{9} /;
+    let regexPhone = /[6-9][0-9]{9}/;
     var error = phone.nextElementSibling;
     if(phone.value.match(regexPhone) == null){
         error.innerText = "Enter a Valid Phone Number."
@@ -41,14 +41,15 @@ function validatePhone(){
     return true;
     
 }
-function passwordValidate(){
-    
-}
+
 
 function validateForm(){
-    
-    if(!validateName() || !validateEmail() ||!validatePhone()){
-        return false;
+    let nameErr = validateName();
+    let emailErr = validateEmail();
+    let phoneErr = validatePhone();
+    if(nameErr && emailErr && phoneErr){
+     let form = document.getElementById("register");
+     form.submit();     
     }
-    return true;
+    
 }

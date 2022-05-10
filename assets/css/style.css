@@ -83,6 +83,7 @@
     border:none;
     grid-column : 1/span 2;
     margin: auto;
+    text-decoration: none;
 }
 .form-input{
     display: flex;
