@@ -29,7 +29,12 @@
 
 .error {
     color: var(--error);
+    font-size: small;
+    position: absolute;
+    bottom: -14px;
 }
+
+
 .login-form-wrapper{
     margin: auto;
     background-color: var(--accent);
@@ -50,6 +55,11 @@
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid var(--secondary);
+}
+
+.input-error{
+    outline: none;
+    border-bottom: 2px solid var(--error);
 }
 .login-input::placeholder{
     color: var(--text);
@@ -77,6 +87,8 @@
 .form-input{
     display: flex;
     flex-direction: column  ;
+    position: relative;
+
 }
 .login-input.error-input{
     border-bottom: var(--error) 2px solid;
