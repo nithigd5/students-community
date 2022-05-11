@@ -12,7 +12,7 @@
 <body>
     <div class="login-form-wrapper">
         <h1 class="topic">Register</h1>
-        <form method="post" class="register" action="register.php" onsubmit="return validateForm()">
+        <form method="post" id="register" action="register.php">
             <div class='form-input'>
                 <input type="text" class="login-input" name="name" id="name" placeholder="Name"/>
                 <span class="error"></span> 
@@ -54,7 +54,7 @@
                 <span class="error"></span> 
             </div>
             
-            <button class="login-btn" value="submit" type="submit">Submit</a>
+            <a class="login-btn" href="#" onclick="validateForm()">Submit</a>
         
             </form>
     </div>
