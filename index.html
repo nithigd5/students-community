@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stu-Com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .nav-container {
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+            background-color: #f5f6f7;
+            width: fit-content;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+        }
+        
+        .home-icon {
+            background: url("assets/icons/home.svg");
+        }
+        
+        .help-icon {
+            background: url("assets/icons/help-circle.svg");
+        }
+        
+        .notification-icon {
+            background: url("assets/icons/ic_outline-notifications-active.svg");
+        }
+        
+        .profile-icon {
+            background: url("assets/icons/ph_student.svg");
+        }
+        
+        .nav-icon {
+            display: block;
+            background-position: center;
+            width: 61px;
+            height: 61px;
+            background-size: contain;
+        }
+        
+        .post {
+            background-color: #E6E6E6;
+            width: 400px;
+            height: 530px;
+        }
+        
+        .post-title-text {
+            font-family: 'Poppins', 'sans-serif';
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 18px;
+            color: black;
+            width: 100%;
+            text-align: left;
+        }
+        
+        .post-subtitle {
+            font-family: 'Poppins', 'sans-serif';
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            width: 100%;
+            color: #757575;
+            text-align: right;
+        }
+        
+        .post-profile img {
+            border-radius: 50%;
+            width: 57px;
+            height: 57px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+        }
+        
+        .post-header-title {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            background-color: #f5f6f7;
+            position: relative;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        
+        .post-profile {
+            position: absolute;
+            top: -20px;
+            right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav-container">
+        <span class="home-icon nav-icon"></span>
+        <span class="help-icon nav-icon"></span>
+        <span class="notification-icon nav-icon"></span>
+        <span class="profile-icon nav-icon"></span>
+    </div>
+
+    <div class="post">
+        <div class="post-header">
+            <div class="post-header-title">
+                <h3 class="post-title-text">Artificial Intelligence Course Post</h3>
+                <h3 class="post-subtitle">10:04:12 PM 5 March 2022</h3>
+                <div class="post-profile">
+                    <img src="/assets/images/profile.jpg" />
+                </div>
+            </div>
+            <div class="post-menu">
+                <span class="post-menu-icon"></span>
+            </div>
+        </div>
+        <div class="post-img"></div>
+        <div class="post-desc"></div>
+        <div class="post-interaction"> </div>
+    </div>
+
+</body>
+
+</html>
