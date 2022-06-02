@@ -1,13 +1,14 @@
 @import url("/assets/css/theme.css");
+@import url("/assets/css/home.css");
 
 *, body {
     margin: 0;
     box-sizing: border-box;
 }
 
+
 .register{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -78,10 +79,11 @@
     width: 90px;
     padding: 10px;
     color: aliceblue;
+    align-self: center;
     background-color:var(--secondary);
     border-radius: 25px;
     border:none;
-    grid-column : 1/span 2;
+    
     margin: auto;
     text-decoration: none;
 }
