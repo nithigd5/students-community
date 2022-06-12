@@ -9,13 +9,12 @@ class FormValidation{
     $this->student = $student;
   }
   function validateName($name){
-    if (!preg_match ("/[a-zA-z]/", $name) ) {  
-      $ErrMsg = "Only alphabets and whitespace are allowed.";  
-               echo $ErrMsg; 
-      return false;
-    } 
+    // if (!preg_match ("/[a-zA-z]/", $name) ) {  
+    //   $ErrMsg = "Only alphabets and whitespace are allowed.";  
+    //            echo $ErrMsg; 
+    //   return false;
+    // } 
     return true;  
-    
   }
   function validateNumber($num){
     if (!preg_match ("[0-9]*", $num) ){  
@@ -70,10 +69,11 @@ class FormValidation{
   }
 
   function validateAll(){
-    return ($this->validateStuName() && $this->validateEmail() && $this->validateDob()
-            && $this->validateCollegeName() && $this->validatePhone() && $this->validateDegree() 
-            && $this->validateYear() && $this->validateDepartment() && $this->validateGraduateYear() 
-            && $this->validateCity());
+    // return ($this->validateStuName() && $this->validateEmail() && $this->validateDob()
+    //         && $this->validateCollegeName() && $this->validatePhone() && $this->validateDegree() 
+    //         && $this->validateYear() && $this->validateDepartment() && $this->validateGraduateYear() 
+    //         && $this->validateCity());
+    return true;
   }
 }
 

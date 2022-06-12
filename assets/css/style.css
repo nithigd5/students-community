@@ -28,6 +28,16 @@
    
 } */
 
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    place-items: center;
+}
+
+.form .login-btn{
+    grid-column-end: span 2;
+}
 .error {
     color: var(--error);
     font-size: small;
@@ -83,8 +93,7 @@
     background-color:var(--secondary);
     border-radius: 25px;
     border:none;
-    
-    margin: auto;
+    text-align: center;
     text-decoration: none;
 }
 .form-input{

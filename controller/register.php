@@ -12,7 +12,7 @@
     $department = test_input($_POST["department"]);
     $city = test_input($_POST["city"]);
     $year = test_input($_POST["year"]);
-    $graduation_year = test_input($_POST["graduation_year"]);
+    $graduation_year = test_input($_POST["graduation-year"]);
     $student = new StudentDetails($name,$email,$phone,$dob,$college,$degree,
     $department,$city,$year,$graduation_year);
     return $student;
@@ -22,9 +22,10 @@
     $student = getFormData();
     $FormValidation = new FormValidation($student);
     if($FormValidation->validateAll()){
-      // Store it in Database
+      var_dump($student);
     }else{
-      http_response_code(403);
+      http_response_code(400);
+      die("Invalid Data");
     }
   }else{
     http_response_code(403);
