@@ -1,0 +1,8 @@
+<!-- <Files ~ “\.php$”>
+    Order allow,deny
+    Deny from all
+</Files> -->
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php 

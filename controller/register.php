@@ -1,6 +1,6 @@
 <?php  
-  require("./models/SecurityCheck.php");
-  require("./models/FormValidation.php");
+  require_once($_SERVER["DOCUMENT_ROOT"]."./models/SecurityCheck.php");
+  require_once($_SERVER["DOCUMENT_ROOT"]."./models/FormValidation.php");
 
   function getFormData(){
     $name = test_input($_POST["name"]); 
