@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post.html</title>
+</head>
+
+<body>
+    <h2 class="tophead"> Welcome to post page</h2>
+    <div class="post">
+        <div class="title-div">
+            <label class="heading" for="title">Title :</label><br>
+            <input type="text" class="input-field" name="title" placeholder="Enter post title...">
+        </div>
+        <div class="text-area">
+            <label class="heading" for="description">Description :</label><br>
+            <textarea name="description" class="input-field" cols="50" rows="10" placeholder="Write your comment here..."></textarea>
+        </div>
+        <div class="post-btn">
+            <button class="btn">post</button>
+        </div>
+
+    </div>
+
+    <style>
+        .tophead {
+            color: blue;
+            text-align: center;
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        .heading {
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            color: rgb(255, 5, 5);
+        }
+        
+        .title-div {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+        
+        .text-area {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+        
+        .input-field {
+            padding: 15px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .post-btn {
+            padding-left: 200px;
+        }
+        
+        .btn {
+            border: none;
+            color: white;
+            background-color: #4CAF50;
+            cursor: pointer;
+            height: 30px;
+            width: 80px;
+            border-radius: 4px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .btn:hover {
+            background-color: #45a049;
+        }
+        
+        .post {
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            border: 1px solid rgb(222, 219, 214);
+            border-radius: 20px;
+            box-sizing: content-box;
+            height: fit-content;
+            width: 500px;
+            background-color: rgb(183, 188, 193);
+            margin-left: 35%;
+        }
+    </style>
+</body>
+
+</html>
