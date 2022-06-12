@@ -1,63 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register | Students Community</title> 
+    <title>Register | Students Community</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script src="/assets/javascript/main.js"></script>
-    <script src="/assets/javascript/register.js" ></script>
- </head>
+    <script src="/assets/javascript/register.js"></script>
+</head>
+
 <body>
-    <div class="login-form-wrapper">
-        <h1 class="topic">Register</h1>
-        <form method="post" class="form" id="register" action="/controller/register.php">
-            <div class='form-input'>
-                <input type="text" class="login-input" name="name" id="name" placeholder="Name"/>
-                <span class="error"></span> 
-            </div>
-            <div class="form-input">
-                <input class="login-input" type="tel" name="phone" id="phone" placeholder="Phone" />
-                <span class="error"></span> 
-            </div>
-            <div class="form-input">
-                <input class="login-input" type="email" name="email" id="email" placeholder="Email"/>
-                <span class="error"></span> 
-            </div>
-            <div class="form-input">
-                <input class="login-input" type="date" name="dob" id="dob" placeholder="Date Of Birth" />
-                <span class="error"></span> 
-            </div> 
-            <div class="form-input">
-                <input class="login-input" type="text" name="college" id="college" placeholder="College" />
-                <span class="error"></span> 
-            </div>
-            <div class="form-input">
-                <input class="login-input" type="text" name="degree" id="degree" placeholder="Degree" />
-                <span class="error"></span> 
-            </div>
-            <div class="form-input">
-                <input class="login-input" type="text" name="department" id="department" placeholder="Department"/>
-                <span class="error"></span> 
-            </div>
-            <div class="form-input">
-                <input class="login-input" type="text" name="city" id="city" placeholder="City"/>
-                <span class="error"></span> 
-            </div>
-            <div class="form-input">
-                <input class="login-input" type="text" name="year" id="year" placeholder="Year" />
-                <span class="error"></span> 
-            </div>
-            <div class="form-input">
-                <input class="login-input" type="year" name="graduation-year" id="graduation-year"  placeholder="Graduation Year">
-                <span class="error"></span> 
-            </div><br>
-            
-            <a class="login-btn" href="#" onclick="validateForm()">Submit</a>
-        
+    <div class="form-container">
+        <div class="login-form-wrapper">
+            <h1 class="topic">Register</h1>
+            <form method="post" class="form" id="register" action="/register">
+                <div class='form-input'>
+                    <input type="text" class="login-input" name="name" id="name" placeholder="Name"  required/>
+                    <span class="error"></span>
+                </div>
+                <div class="form-input">
+                    <input class="login-input" type="tel" name="phone" id="phone" placeholder="Phone" required/>
+                    <span class="error"></span>
+                </div>
+                <div class="form-input">
+                    <input class="login-input" type="email" name="email" id="email" placeholder="Email" required/>
+                    <span class="error"></span>
+                </div>
+                <div class="form-input">
+                    <input class="login-input" type="date" name="dob" id="dob" placeholder="Date Of Birth" required/>
+                    <span class="error"></span>
+                </div>
+                <div class="form-input">
+                    <input class="login-input" type="text" name="college" id="college" placeholder="College" required/>
+                    <span class="error"></span>
+                </div>
+                <div class="form-input">
+                    <input class="login-input" type="text" name="degree" id="degree" placeholder="Degree" required/>
+                    <span class="error"></span>
+                </div>
+                <div class="form-input">
+                    <input class="login-input" type="text" name="department" id="department" placeholder="Department" required/>
+                    <span class="error"></span>
+                </div>
+                <!-- <div class="form-input">
+                    <input class="login-input" type="text" name="city" id="city" placeholder="City" />
+                    <span class="error"></span>
+                </div> -->
+                <div class="form-input">
+                    <input class="login-input" type="text" name="year" id="year" placeholder="Year" />
+                    <span class="error"></span>
+                </div>
+                <div class="form-input">
+                    <input class="login-input" type="year" name="graduation-year" id="graduation-year"
+                        placeholder="Graduation Year" required>
+                    <span class="error"></span>
+                </div><div></div>
+                <div class="form-input">
+                    <input class="login-input" type="password" name="password1" id="password1"
+                        placeholder="Password" required>
+                    <span class="error"></span>
+                </div> 
+                <div class="form-input">
+                    <input class="login-input" type="password" name="password2" id="password2"
+                        placeholder="Password" required>
+                    <span class="error"></span>
+                </div>
+                <br>
+
+                <a class="login-btn" href="#" onclick="validateForm()">Submit</a>
             </form>
+            <a class="login-btn-sm" href="/login">Login Instead</a>
+        </div>
     </div>
 </body>
-</html>
 
+</html>

@@ -101,9 +101,6 @@
             right: 15px;
         }
 /*homepage*/
-body{
-    background-color: green;
-}
 .post-title{
     display: flex;
     overflow: hidden;
