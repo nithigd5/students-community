@@ -12,3 +12,8 @@
     --text: #191A19;
     --error: red;
 }
+
+a{
+    text-decoration: none;
+    color: var(--text);
+}

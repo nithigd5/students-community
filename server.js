@@ -8,7 +8,7 @@ const post = require("./routes/post");
 const { sessionConfig } = require('./config/session');
 const userSession = session(sessionConfig);
 app.use(userSession);
-const port = 8080;
+const port = 80;
 
 app.use("/assets",express.static("assets"));
 
@@ -25,6 +25,6 @@ app.get("/home", (req, res)=>{
     res.sendFile(__dirname+"/views/home.html");
 })
 
-app.listen(port, ()=>{
+app.listen(port,'0.0.0.0', ()=>{
     console.log(`Listening at port ${port}`);
 })
