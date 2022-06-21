@@ -11,6 +11,7 @@ app.use(userSession);
 const port = 80;
 
 app.use("/assets",express.static("assets"));
+app.use("/uploads",express.static("uploads"));
 
 // Routes are handled here.
 app.use("/register", register);

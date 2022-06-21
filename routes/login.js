@@ -5,15 +5,15 @@ router.use(bodyParser.urlencoded({ extended: true })) // for parsing application
 const { login }  = require('../models/database/student');
 
 router.get("/",(req, res)=>{
+    console.log(req.session.id);
     res.sendFile("/views/login.html", { root: '.'});
 })
 
-router.post("/", (req, res)=>{
-    console.log(req.body);
+router.post("/", async (req, res)=>{
     let loginData = req.body;
-    let user = login(loginData)
+    let user = await login(loginData)
     if(user){
-            console.log("Registration Successfull");
+            console.log("Login Successfull");
             req.session.userID = user.id;
             req.session.name = user.name;
             req.session.email = user.email;

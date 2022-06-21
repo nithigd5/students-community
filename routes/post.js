@@ -5,6 +5,7 @@ const multer  = require('multer')
 const upload = multer({ dest: 'uploads/' })
 var fs = require('fs')
 const authenticate = require('./authenciate');
+const path = require('path');
 
 router.use('/', authenticate);
 
@@ -20,6 +21,11 @@ router.get("/",(req, res)=>{
 router.post("/", upload.single('image'), (req, res)=>{
     console.log(req.file);
     let registerData = req.body;
+    let file = req.file.path;
+    let ext = path.extname(req.file.originalname);
+    fs.renameSync(file, file+ext);
+    registerData.image = file+ext;
+    registerData.userID = req.session.userID;
     uploadPost(registerData, (postID)=>{
         if(postID){
             console.log("Posted Successfull");

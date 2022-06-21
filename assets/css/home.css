@@ -134,7 +134,7 @@
         .news {
             display: flex;
             flex-direction: column;
-            gap: 5px;
+            gap: 20px;
             border-radius: 15px;
             background-color: white;
             width: max-content;
@@ -146,7 +146,7 @@
             display: flex;
             background-color: #E2FF92;
             flex-direction: column;
-            border-radius: 40px;
+            border-radius: 10px;
             height: max-content;
             width: 320px;
             justify-content: center;
@@ -189,7 +189,7 @@
         }
 
         /* event updates */
-        .updates {
+        .posts {
             background-color: transparent;
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -260,7 +260,8 @@
         }
         .body-desc{
             color:var(--text);
-            background-color: #f5f6f7;
+            background-color: #ffff;
+            padding: 5px;
             padding-top: 10px;
             padding-bottom: 10px;
         }

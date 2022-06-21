@@ -3,7 +3,7 @@ const router = express.Router()
 const { getUser }  = require('../models/database/student');
 
 router.use('/',async (req, res, next) => {
-    // console.log(req.session.id);
+    console.log(req.session.id);
     let session = req.session;
     if(session.userID && session.name && session.email){
         let user = await getUser(req.session.userID);

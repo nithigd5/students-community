@@ -20,8 +20,7 @@ async function getAllPost(){
   let query = `SELECT *from posts`;
   try{
     let res = await executeQuery(query);
-    // console.log(res[0]);
-    return res[0];
+    return res;
     
   }catch(e){
     console.log(e.message);
